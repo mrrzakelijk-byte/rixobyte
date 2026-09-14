@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Informatie over Rixobyte, Raman Resitoglu en het bouwen van websites door te coderen." />
+  <title>Info | Rixobyte</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.preloader{display:none!important;}body.is-loading{overflow:visible!important;}</style></noscript>
+</head>
+<body class="is-loading">
+  <div class="preloader" id="preloader" role="status" aria-label="Loading">
+    <div class="preloader-stage">
+      <img class="preloader-mark" src="rixobyte-logo.png" alt="Rixobyte" />
+      <div class="preloader-bar"><span class="preloader-fill"></span></div>
+      <span class="preloader-percent">0%</span>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-light" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="shape-field" aria-hidden="true">
+    <span class="shape shape-tag shape-a">&lt;/&gt;</span>
+    <span class="shape shape-tag shape-b">{ }</span>
+    <span class="shape shape-tag shape-c">01</span>
+    <span class="shape shape-ring shape-d"></span>
+    <span class="shape shape-tag shape-e">&lt;div&gt;</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html#top" aria-label="Rixobyte home">
+      <img class="brand-logo" src="rixobyte-logo.png" alt="Rixobyte logo" />
+      <span class="brand-copy">
+        <strong data-i18n="brandName">Rixobyte</strong>
+        <small data-i18n="brandSmall">Custom coded websites</small>
+      </span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" aria-label="Hoofdnavigatie">
+      <a href="index.html#top" data-i18n="navHome">Home</a>
+      <a href="index.html#diensten" data-i18n="navServices">Diensten</a>
+      <a href="index.html#projecten" data-i18n="navProjects">Projecten</a>
+      <a href="index.html#werkwijze" data-i18n="navProcess">Werkwijze</a>
+      <a href="index.html#offerte" data-i18n="navQuote">Offerte</a>
+      <a href="info.html" class="active" data-i18n="navInfo">Info</a>
+    </nav>
+
+    <div class="language-panel" aria-label="Taal kiezen">
+      <button class="language-button active" type="button" data-lang="nl" aria-label="Nederlands">
+        <img src="nl.svg" alt="Nederlandse vlag" /><span>NL</span>
+      </button>
+      <button class="language-button" type="button" data-lang="en" aria-label="English">
+        <img src="en.svg" alt="Engelse vlag" /><span>EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="info-hero section-shell reveal">
+      <div>
+        <p class="kicker" data-i18n="infoKicker">Info</p>
+        <h1 data-i18n="infoTitle">Rixobyte bouwt websites door te coderen.</h1>
+        <p data-i18n="infoIntro">Deze pagina staat apart zodat bedrijfsinfo, contactgegevens en werkwijze niet verstopt zitten tussen marketingtekst.</p>
+      </div>
+      <div class="info-logo-card tilt-card">
+        <img class="info-mark" src="rixobyte-logo.png" alt="Rixobyte logo" />
+        <p>Rixobyte</p>
+      </div>
+    </section>
+
+    <section class="section-shell info-grid reveal-group reveal">
+      <article class="info-card reveal" style="--stagger:0">
+        <h2 data-i18n="infoCompanyTitle">Bedrijf</h2>
+        <p><strong data-i18n="infoCompanyName">Bedrijfsnaam:</strong> Rixobyte</p>
+        <p><strong data-i18n="infoOwner">Eigenaar:</strong> Raman Resitoglu</p>
+      </article>
+
+      <article class="info-card reveal" style="--stagger:1">
+        <h2 data-i18n="infoServiceTitle">Wat ik doe</h2>
+        <p data-i18n="infoServiceText">Ik bouw websites door te coderen. De focus ligt op snelle, duidelijke websites met een moderne dark/green uitstraling.</p>
+        <p data-i18n="infoServiceTextTwo">Een prijs wordt pas bepaald na een intakegesprek, omdat elk project anders is.</p>
+      </article>
+
+      <article class="info-card reveal" style="--stagger:2">
+        <h2 data-i18n="infoProjectTitle">Eerdere projecten</h2>
+        <p data-i18n="infoProjectText">Ik heb al eerdere websites gebouwd. In de projectensectie staan voorbeelden zoals Rijschool Arend en Akaareno.</p>
+        <a class="project-link" href="index.html#projecten" data-i18n="infoProjectButton">Bekijk mijn projecten</a>
+      </article>
+
+      <article class="info-card reveal" style="--stagger:3">
+        <h2 data-i18n="infoContactTitle">Contact</h2>
+        <p><strong data-i18n="contactEmail">E-mail:</strong> mrr.zakelijk@gmail.com</p>
+        <p><strong data-i18n="infoPreference">Voorkeur:</strong> <span data-i18n="infoPreferenceValue">Mail of formulier</span></p>
+      </article>
+    </section>
+
+    <section class="section-shell return-box reveal">
+      <h2 data-i18n="returnTitle">Terug naar de offerteaanvraag?</h2>
+      <a class="button button-primary magnetic" href="index.html#offerte" data-i18n="returnButton">Naar offerte</a>
+      <a class="button button-secondary magnetic" href="index.html" data-i18n="backHome">Terug naar home</a>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <span><strong>Rixobyte</strong> <span data-i18n="footerText">— gebouwd door Raman Resitoglu.</span></span>
+    <a href="index.html#projecten" data-i18n="navProjects">Projecten</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
