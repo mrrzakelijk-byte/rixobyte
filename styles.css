@@ -50,9 +50,11 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header) + 24px);
+  overflow-x: hidden;
 }
 body {
   margin: 0;
+  max-width: 100%;
   color: var(--ink);
   background: var(--paper);
   font-family: var(--font);
@@ -87,6 +89,7 @@ a {
   text-decoration: none;
 }
 img,
+video,
 svg {
   display: block;
   max-width: 100%;
@@ -639,6 +642,7 @@ main:focus {
 }
 .project h3 > a {
   display: inline-flex;
+  position: relative;
   gap: 14px;
   align-items: center;
 }
