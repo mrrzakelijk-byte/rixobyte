@@ -55,6 +55,7 @@ html {
 body {
   margin: 0;
   max-width: 100%;
+  overflow-x: hidden;
   color: var(--ink);
   background: var(--paper);
   font-family: var(--font);
@@ -446,6 +447,9 @@ main:focus {
 }
 .project-grid {
   display: flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   gap: 30px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
