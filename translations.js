@@ -3,7 +3,7 @@ window.RIXOBYTE_TRANSLATIONS = {
   nl: {
     titleHome: "Rixobyte | Jouw bedrijf, goed in beeld.",
     descHome:
-      "Rixobyte ontwerpt en bouwt websites voor ondernemers. Bekijk het werk van Raman Resitoglu en bespreek jouw nieuwe website.",
+      "Rixobyte ontwerpt en bouwt websites voor ondernemers. Bekijk onze projecten en bespreek jouw nieuwe website.",
     skip: "Naar de inhoud",
     navProjects: "Projecten",
     navServices: "Diensten",
@@ -203,7 +203,7 @@ window.RIXOBYTE_TRANSLATIONS = {
   en: {
     titleHome: "Rixobyte | Your business, well presented.",
     descHome:
-      "Rixobyte designs and builds websites for businesses. Explore the work of Raman Resitoglu and discuss your new website.",
+      "Rixobyte designs and builds websites for businesses. Explore our projects and discuss your new website.",
     skip: "Skip to content",
     navProjects: "Projects",
     navServices: "Services",
