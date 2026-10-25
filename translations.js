@@ -9,7 +9,7 @@ window.RIXOBYTE_TRANSLATIONS = {
     navServices: "Diensten",
     navProcess: "Werkwijze",
     mainNav: "Hoofdnavigatie",
-    navAbout: "Over mij",
+    navAbout: "Over Rixobyte",
     navContact: "Contact",
     language: "Taal kiezen",
     talk: "Laten we praten",
@@ -17,11 +17,11 @@ window.RIXOBYTE_TRANSLATIONS = {
     heroLine1: "Jouw bedrijf,",
     heroLine2: "goed in beeld.",
     heroText:
-      "Ik ben Raman. Ik ontwerp en bouw websites die passen bij jouw bedrijf. Helder, snel en tot in de details verzorgd.",
+      "Rixobyte ontwerpt en ontwikkelt professionele websites die passen bij jouw bedrijf. Modern, snel en tot in de details verzorgd.",
     heroCta: "Vertel over je plannen",
     heroNote: "Direct contact met de maker.",
     heroFoot: "Van de eerste schets tot de laatste klik.",
-    viewWork: "Bekijk mijn werk",
+    viewWork: "Bekijk ons werk",
     selected: "Geselecteerd werk",
     projectsTitle: "Projecten gemaakt door Rixobyte.",
     projectsText:
@@ -58,12 +58,12 @@ window.RIXOBYTE_TRANSLATIONS = {
     glansoraTag: "Webdesign & development",
     glansoraDesc:
       "Een frisse uitstraling, heldere diensten en een toegankelijke offerteaanvraag.",
-    servicesEyebrow: "Wat ik voor je kan doen",
-    servicesTitle: "Van een goed idee naar een goede website.",
+    servicesEyebrow: "Wat Rixobyte voor je kan betekenen",
+    servicesTitle: "Van een goed idee naar een sterke website.",
     discuss: "Bespreek jouw project",
     service1Title: "Een nieuwe website",
     service1Text:
-      "Een compacte one-page, een portfolio of een complete bedrijfswebsite. Ik denk mee over de inhoud en vertaal je bedrijf naar een passend ontwerp.",
+      "Van een compacte onepage tot een complete bedrijfswebsite. Rixobyte denkt mee over de inhoud en vertaalt jouw bedrijf naar een passend ontwerp.",
     service1Detail: "Ontwerp · Ontwikkeling · Mobiel",
     service2Title: "Je website verbeteren",
     service2Text:
@@ -71,7 +71,7 @@ window.RIXOBYTE_TRANSLATIONS = {
     service2Detail: "Redesign · Structuur · Gebruiksgemak",
     service3Title: "Onderhoud & updates",
     service3Text:
-      "Nieuwe foto’s, aangepaste teksten of een extra pagina. Ook na de oplevering kan ik helpen. We spreken vooraf af wat je nodig hebt en wat het kost.",
+      "Nieuwe foto's, aangepaste teksten of een extra pagina. Ook na oplevering biedt Rixobyte ondersteuning. We spreken vooraf af wat je nodig hebt en wat het kost.",
     service3Detail: "Aanpassingen · Uitbreidingen · Ondersteuning",
     processEyebrow: "Samen aan de slag",
     processTitle: "Korte lijnen. Duidelijke stappen.",
@@ -89,10 +89,10 @@ window.RIXOBYTE_TRANSLATIONS = {
     step4Title: "Klaar om live te gaan",
     step4Text:
       "We controleren de pagina’s, links en mobiele versie. Na jouw akkoord zetten we de website online.",
-    makerEyebrow: "De persoon achter de pixels",
-    makerTitle: "Je spreekt met de maker.",
+    makerEyebrow: "Maak kennis met Rixobyte",
+    makerTitle: "Persoonlijk contact. Professioneel resultaat.",
     makerText:
-      "Ik ben Raman Resitoglu, de maker achter Rixobyte. Van ons eerste gesprek tot de oplevering werk je rechtstreeks met mij. Ik houd van websites die goed in elkaar zitten en prettig zijn om te gebruiken.",
+      "Rixobyte is opgericht door Raman Resitoglu. Je hebt direct contact met de oprichter, van het eerste gesprek tot de oplevering. De focus ligt op sterke websites, heldere afspraken en langdurige samenwerking.",
     moreAbout: "Meer over Rixobyte",
     faqEyebrow: "Goed om te weten",
     faqTitle: "Nog een vraag?",
@@ -209,7 +209,7 @@ window.RIXOBYTE_TRANSLATIONS = {
     navServices: "Services",
     navProcess: "Process",
     mainNav: "Main navigation",
-    navAbout: "About me",
+    navAbout: "About Rixobyte",
     navContact: "Contact",
     language: "Choose language",
     talk: "Let’s talk",
@@ -217,11 +217,11 @@ window.RIXOBYTE_TRANSLATIONS = {
     heroLine1: "Your business,",
     heroLine2: "well presented.",
     heroText:
-      "I’m Raman. I design and build websites that feel right for your business. Clear, fast and carefully considered.",
+      "Rixobyte designs and develops professional websites tailored to your business. Modern, fast and carefully crafted.",
     heroCta: "Tell me about your plans",
     heroNote: "A direct line to the maker.",
     heroFoot: "From the first sketch to the final click.",
-    viewWork: "Explore my work",
+    viewWork: "Explore our work",
     selected: "Selected work",
     projectsTitle: "Projects made by Rixobyte.",
     projectsText:
@@ -257,12 +257,12 @@ window.RIXOBYTE_TRANSLATIONS = {
     glansoraTag: "Design & development",
     glansoraDesc:
       "A fresh visual identity, clear services and an easy way to request a quote.",
-    servicesEyebrow: "What I can help you with",
-    servicesTitle: "From a good idea to a great website.",
+    servicesEyebrow: "What Rixobyte can do for you",
+    servicesTitle: "From a good idea to a strong website.",
     discuss: "Let’s discuss your project",
     service1Title: "A new website",
     service1Text:
-      "A focused one-page site, a portfolio or a full business website. I help shape the content and turn your business into a fitting design.",
+      "From a focused one-page site to a complete business website. Rixobyte helps shape the content and creates a design that fits your business.",
     service1Detail: "Design · Development · Mobile",
     service2Title: "Improve your website",
     service2Text:
@@ -270,7 +270,7 @@ window.RIXOBYTE_TRANSLATIONS = {
     service2Detail: "Redesign · Structure · Usability",
     service3Title: "Maintenance & updates",
     service3Text:
-      "New photos, updated copy or an extra page. I can help after launch too. We agree on the work and the cost before getting started.",
+      "New photos, updated copy or an extra page. Rixobyte also offers support after launch. We agree on the scope and costs in advance.",
     service3Detail: "Updates · Extensions · Support",
     processEyebrow: "Working together",
     processTitle: "Easy communication. Clear steps.",
@@ -288,10 +288,10 @@ window.RIXOBYTE_TRANSLATIONS = {
     step4Title: "Ready to launch",
     step4Text:
       "We check the pages, links and mobile experience. Once you approve, we put the website online.",
-    makerEyebrow: "The person behind the pixels",
-    makerTitle: "You speak to the maker.",
+    makerEyebrow: "Meet Rixobyte",
+    makerTitle: "Personal contact. Professional results.",
     makerText:
-      "I’m Raman Resitoglu, the maker behind Rixobyte. From our first conversation to launch, you work directly with me. I care about websites that are well built and a pleasure to use.",
+      "Rixobyte was founded by Raman Resitoglu. You work directly with the founder, from the first conversation to launch. The focus is on quality websites, clear agreements and lasting partnerships.",
     moreAbout: "More about Rixobyte",
     faqEyebrow: "Good to know",
     faqTitle: "Have a question?",
