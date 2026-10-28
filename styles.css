@@ -2366,3 +2366,16 @@ details[open] .faq-plus::after {
 .site-footer .rix-footer-base a{color:inherit;text-decoration:none}
 @media(max-width:950px){.site-footer .rix-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-footer .rix-footer-col{padding-left:20px}}
 @media(max-width:560px){.site-footer .rix-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 16px;padding-top:38px}.site-footer .rix-footer-intro{grid-column:1/-1}.site-footer .rix-footer-col{padding-left:12px}.site-footer .rix-footer-col:last-child{grid-column:1/-1}.site-footer .rix-footer-intro h2{font-size:clamp(46px,14vw,74px)}.site-footer .rix-footer-base{font-size:12px}}
+
+/* Duidelijke afspraken — consistent with Rixobyte layout */
+.agreements .section-intro{margin-bottom:clamp(28px,4vw,58px)}
+.agreements-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,24px)}
+.agreement-card{min-width:0;padding:clamp(22px,2.2vw,34px);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;gap:16px}
+.agreement-index{font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;font-weight:700}
+.agreement-card h3{font-size:clamp(20px,1.65vw,28px);line-height:1.18;letter-spacing:-.035em;margin:4px 0 0;overflow-wrap:anywhere}
+.agreement-card p{font-size:clamp(13px,1vw,15px);line-height:1.75;opacity:.76;margin:0}
+.agreements-note{margin-top:20px;padding:clamp(22px,2.5vw,34px);background:rgba(75,95,69,.07);border-radius:12px;display:flex;gap:20px;align-items:flex-start}
+.agreements-note-mark{font-size:24px;line-height:1}
+.agreements-note p{max-width:1000px;margin:0;font-size:clamp(13px,1.1vw,16px);line-height:1.8}
+@media(max-width:1100px){.agreements-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.agreements-grid{grid-template-columns:1fr}.agreement-card{gap:12px}.agreements-note{gap:12px}.agreements-note-mark{font-size:19px}}
