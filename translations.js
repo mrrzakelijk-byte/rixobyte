@@ -337,7 +337,7 @@ window.RIXOBYTE_TRANSLATIONS = {
     faqA3:
       "Yes. I first look at how your current website is built and what needs to improve. Then we discuss whether an update or a rebuild best fits your needs.",
     faqQ4: "Can you help after launch?",
-    faqA4:
+    faqA4: "Yes, maintenance and further updates are possible. We agree on the work and costs in advance. We also discuss hosting and your domain at the start of the project.",
     faqQ5: "How does payment work?",
     faqA5: "You pay 50% at the start and the remaining 50% upon delivery, as specified in the quote.",
     faqQ6: "Can I cancel during the project?",
@@ -352,7 +352,6 @@ window.RIXOBYTE_TRANSLATIONS = {
     faqA10: "I provide a solid technical SEO foundation and can advise on or help set up Google Ads. Advertising spend and additional work are agreed separately; search rankings cannot be guaranteed.",
     faqQ11: "Can I see a preview first?",
     faqA11: "Yes. We can discuss a prototype before development so you can preview the design. Whether this is free of charge is agreed beforehand.",
-      "Yes, maintenance and further updates are possible. We agree on the work and costs in advance. We also discuss hosting and your domain at the start of the project.",
     agreementIndex1: "01 / PAYMENT",
     agreementIndex2: "02 / HOSTING",
     agreementIndex3: "03 / MAINTENANCE",
