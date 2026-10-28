@@ -295,7 +295,7 @@
         return `${t(labels[i])}: ${value || "—"}`;
       })
       .join("\n\n");
-    fallback.href = `mailto:mrr.zakelijk@gmail.com?subject=${encodeURIComponent(t("mailSubject"))}&body=${encodeURIComponent(body)}`;
+    fallback.href = `mailto:info@rixobyte.com?subject=${encodeURIComponent(t("mailSubject"))}&body=${encodeURIComponent(body)}`;
   }
 
   if (form && window.fetch && window.AbortController) {
