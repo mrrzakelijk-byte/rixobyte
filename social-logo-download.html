@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rixobyte — profielfoto met witte achtergrond</title>
+<meta name="robots" content="noindex">
+<style>body{font:16px system-ui,Arial,sans-serif;background:#f4f4f1;color:#222;margin:0;padding:24px;text-align:center}main{max-width:580px;margin:30px auto}canvas{display:block;width:min(100%,440px);height:auto;margin:20px auto;border:1px solid #ddd;box-shadow:0 6px 25px #0001}button{background:#222;color:white;border:0;border-radius:8px;padding:15px 24px;font:inherit;cursor:pointer}p{line-height:1.6}</style></head>
+<body><main><h1>Rixobyte — profielfoto</h1><p>Het originele Rixobyte-logo, op een zuiver witte achtergrond en iets kleiner voor ronde profielfoto's. 2048 × 2048 pixels.</p><canvas id="preview" width="2048" height="2048" aria-label="Voorbeeld van het originele Rixobyte-logo op wit"></canvas><button type="button" id="download" disabled>Download PNG (2048 × 2048)</button><p id="status">Logo laden…</p></main>
+<script>
+"use strict";
+const canvas=document.getElementById("preview"),ctx=canvas.getContext("2d"),status=document.getElementById("status"),button=document.getElementById("download");
+const img=new Image();img.src="rixobyte-logo.png";
+img.onload=()=>{
+  // Preserve the exact original image; trim only transparent margins.
+  const temp=document.createElement("canvas");temp.width=img.naturalWidth;temp.height=img.naturalHeight;
+  const tc=temp.getContext("2d",{willReadFrequently:true});tc.drawImage(img,0,0);
+  const pixels=tc.getImageData(0,0,temp.width,temp.height).data;
+  let minX=temp.width,minY=temp.height,maxX=-1,maxY=-1;
+  for(let y=0;y<temp.height;y++)for(let x=0;x<temp.width;x++){
+    if(pixels[(y*temp.width+x)*4+3]>20){minX=Math.min(minX,x);minY=Math.min(minY,y);maxX=Math.max(maxX,x);maxY=Math.max(maxY,y);}
+  }
+  ctx.fillStyle="#fff";ctx.fillRect(0,0,2048,2048);
+  if(maxX<0){status.textContent="Geen zichtbaar logo gevonden.";return;}
+  const w=maxX-minX+1,h=maxY-minY+1;
+  const scale=Math.min(1330/w,1330/h);
+  const dw=w*scale,dh=h*scale;
+  ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality="high";
+  ctx.drawImage(img,minX,minY,w,h,(2048-dw)/2,(2048-dh)/2,dw,dh);
+  status.textContent="Klaar — de afbeelding is geschikt voor ronde socialmedia-profielen.";
+  button.disabled=false;
+};
+img.onerror=()=>status.textContent="Logo laden mislukt. Ververs de pagina.";
+button.addEventListener("click",()=>{
+  canvas.toBlob(blob=>{
+    if(!blob){status.textContent="Opslaan mislukt.";return;}
+    const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="Rixobyte-oud-logo-wit-socials-2048.png";document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+  },"image/png");
+});
+</script></body></html>
