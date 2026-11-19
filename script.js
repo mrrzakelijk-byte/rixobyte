@@ -48,7 +48,12 @@
     }
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const value = t(el.dataset.i18n);
-      if (value) el.textContent = value;
+      if (value) {
+        // Keep the copyright year current after language changes too.
+        el.textContent = el.dataset.i18n === "footerCopyright"
+          ? value.replace(/\b20\d{2}\b/g, String(new Date().getFullYear()))
+          : value;
+      }
     });
     for (const name of ["placeholder", "aria-label", "alt", "data-label"]) {
       document.querySelectorAll(`[data-i18n-${name}]`).forEach((el) => {
