@@ -60,4 +60,7 @@
     button.addEventListener("click", () => chooseLanguage(button.dataset.lang))
   );
   chooseLanguage(initial);
+  document.querySelectorAll("[data-year]").forEach(el => {
+    el.textContent = String(new Date().getFullYear());
+  });
 })();
