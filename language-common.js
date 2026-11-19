@@ -10,7 +10,7 @@
       navTerms: "Voorwaarden", navCookies: "Cookies",
       navigation: "Navigatie", legalNavigation: "Juridische informatie",
       chooseLanguage: "Taal kiezen", footerRegistration: "KVK-nummer: nog niet bekend · Btw-nummer: nog niet bekend",
-      contactEmail: "E-mail", contactBreadcrumb: "Contact"
+      footerParent: "Rixobyte is onderdeel van RamanVision.", contactEmail: "E-mail", contactBreadcrumb: "Contact"
     },
     en: {
       navHome: "Home", navProjects: "Projects", navServices: "Services",
@@ -19,7 +19,7 @@
       navTerms: "Terms and conditions", navCookies: "Cookies",
       navigation: "Navigation", legalNavigation: "Legal information",
       chooseLanguage: "Choose language", footerRegistration: "Chamber of Commerce: not yet available · VAT number: not yet available",
-      contactEmail: "Email", contactBreadcrumb: "Contact"
+      footerParent: "Rixobyte is part of RamanVision.", contactEmail: "Email", contactBreadcrumb: "Contact"
     }
   };
   const pageTitles = {
