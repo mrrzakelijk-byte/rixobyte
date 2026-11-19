@@ -2917,3 +2917,29 @@ body[data-page="info"] .privacy-section {background:transparent}
   body[data-page="info"] .about-grid .about-content {padding:22px}
   body[data-page="info"] .info-vision::before {background-position:center,64% center}
 }
+
+
+/* Performance and accessibility audit: keep animations offscreen on pause. */
+body[data-page="home"] .hero-leaves:not(.ambient-active) .hero-leaf,
+body[data-page="info"] .info-nature-leaves:not(.ambient-active) .info-nature-leaf {
+  animation-play-state: paused;
+}
+/* Hundreds of permanent GPU layers are unnecessary; transforms still animate smoothly. */
+body[data-page="home"] .hero-leaf,
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer) .hero-leaf {
+  will-change: auto;
+}
+/* Avoid expensive blurring on narrow screens, where it barely affects the design. */
+@media (max-width: 700px) {
+  body[data-page="home"] .agreements .agreement-card,
+  body[data-page="home"] .faq-list,
+  body[data-page="home"] .contact .quote-form,
+  body[data-page="info"] .about-grid .about-content,
+  body[data-page="info"] .info-details dl {
+    backdrop-filter: none;
+  }
+}
+/* Respect reduced motion for in-page anchor navigation too. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
