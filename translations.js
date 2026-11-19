@@ -209,6 +209,11 @@ window.RIXOBYTE_TRANSLATIONS = {
       "Een mooie website begint voor mij bij begrijpen wat je bedrijf doet. Wie zijn je klanten? Wat zoeken ze? En hoe vinden ze snel de juiste informatie? Vanuit die vragen maken we een duidelijke opzet.",
     aboutText2:
       "Ik ontwerp en ontwikkel websites met HTML, CSS en JavaScript, met aandacht voor mobiel gebruik, leesbaarheid, snelheid en de technische basis voor zoekmachines. Ook na oplevering kan ik helpen met hosting en optioneel onderhoud. Je hebt rechtstreeks contact met mij.",
+    aboutWork: "In mijn werk maak ik websites voor verschillende soorten ondernemers, van dienstverlening tot bouw en mobiliteit. Daarbij combineer ik ontwerp met de technische uitvoering: structuur, responsive pagina's en functies die het bezoekers makkelijk maken contact op te nemen.",
+    visionEyebrow: "Achter het merk",
+    visionTitle: "Rixobyte & RamanVision.",
+    visionBody: "Rixobyte is mijn merk voor webdesign, softwareontwikkeling en digitale ondersteuning. Het valt onder RamanVision: mijn persoonlijke overkoepelende merk waar ik ook ruimte houd voor andere ondernemingsideeën. Voor jou als klant blijft Rixobyte gewoon het aanspreekpunt voor websites en ICT.",
+    visionApproach: "Mijn manier van werken is persoonlijk en praktisch. Eerst begrijp ik wat je wilt bereiken, daarna werk ik aan een heldere website die op telefoon en computer goed te gebruiken is. Ik denk mee over details, verzorg de technische uitwerking en kan ook na de oplevering helpen.",
     detailsEyebrow: "Kort & duidelijk",
     detailsTitle: "De gegevens.",
     business: "Bedrijfsnaam",
@@ -460,6 +465,11 @@ window.RIXOBYTE_TRANSLATIONS = {
       "For me, a good website starts with understanding your business. Who are your customers? What are they looking for? How do they quickly find what they need? Those questions guide the structure.",
     aboutText2:
       "I design and develop websites with HTML, CSS and JavaScript, focusing on mobile usability, readability, speed and technical SEO foundations. After launch, I can also help with hosting and optional maintenance. You work directly with me.",
+    aboutWork: "I build websites for different kinds of businesses, including service providers, construction and mobility companies. I combine visual design with the technical work: clear structure, responsive pages and features that make it easy for visitors to get in touch.",
+    visionEyebrow: "Behind the brand",
+    visionTitle: "Rixobyte & RamanVision.",
+    visionBody: "Rixobyte is my brand for web design, software development and digital support. It sits under RamanVision, my personal umbrella brand with room for future business ideas. For clients, Rixobyte remains the direct point of contact for websites and IT.",
+    visionApproach: "My approach is personal and practical. First I understand what you want to achieve, then I work on a clear website that is easy to use on mobile and desktop. I pay attention to the details, take care of the technical implementation and can also help after launch.",
     detailsEyebrow: "At a glance",
     detailsTitle: "The details.",
     business: "Business name",
