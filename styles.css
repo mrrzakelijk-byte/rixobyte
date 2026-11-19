@@ -2733,3 +2733,115 @@ body[data-page="home"] .contact {
     padding-bottom: 20px;
   }
 }
+
+
+/* About Rixobyte: full-width, gently animated landscape sections. */
+body[data-page="info"] :is(.info-hero,.about-grid,.info-vision,.info-details,.privacy-section) {
+  position:relative;
+  isolation:isolate;
+}
+body[data-page="info"] :is(.info-hero,.about-grid,.info-vision,.info-details,.privacy-section)::before {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:50%;
+  width:100vw;
+  transform:translateX(-50%);
+  z-index:-1;
+  pointer-events:none;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+body[data-page="info"] .info-hero::before {
+  background-image:linear-gradient(90deg,rgba(244,244,236,.94),rgba(244,244,236,.78) 58%,rgba(244,244,236,.57)),url("rixobyte-nature-scene.svg?v=20261119-detail2");
+  background-position:center,center 34%;
+}
+body[data-page="info"] .about-grid {
+  padding-block:clamp(48px,7vw,95px);
+}
+body[data-page="info"] .about-grid::before {
+  background-image:linear-gradient(180deg,rgba(244,244,236,.75),rgba(244,244,236,.82) 20%,rgba(244,244,236,.88) 80%,rgba(244,244,236,.72)),url("rixobyte-nature-scene.svg?v=20261119-detail2");
+  background-position:center,center 62%;
+}
+body[data-page="info"] .about-art {
+  background:rgba(229,234,220,.81);
+  backdrop-filter:blur(5px);
+}
+body[data-page="info"] .info-vision {
+  display:grid;
+  grid-template-columns:minmax(0, .78fr) minmax(0, 1.22fr);
+  gap:clamp(40px,7vw,105px);
+  align-items:start;
+}
+body[data-page="info"] .info-vision::before {
+  background-image:linear-gradient(90deg,rgba(244,244,236,.94),rgba(244,244,236,.83) 56%,rgba(244,244,236,.68)),url("rixobyte-nature-dusk.svg?v=20261119-detail2");
+  background-position:center,center 70%;
+}
+body[data-page="info"] .info-vision-intro .eyebrow {
+  margin-bottom:20px;
+}
+body[data-page="info"] .info-vision-copy {
+  display:grid;
+  gap:22px;
+  font-size:clamp(14px,1.2vw,17px);
+  line-height:1.85;
+  color:#3d5144;
+}
+body[data-page="info"] .info-details::before {
+  background-image:linear-gradient(90deg,rgba(244,244,236,.95),rgba(244,244,236,.87) 58%,rgba(244,244,236,.73)),url("rixobyte-nature-scene.svg?v=20261119-detail2");
+  background-position:center,center 69%;
+}
+body[data-page="info"] .info-details dl {
+  background:rgba(249,250,242,.72);
+  border-radius:8px;
+  padding:0 22px;
+  backdrop-filter:blur(6px);
+}
+body[data-page="info"] .privacy-section::before {
+  background-image:linear-gradient(90deg,rgba(230,236,224,.95),rgba(230,236,224,.88) 52%,rgba(230,236,224,.78)),url("rixobyte-nature-dusk.svg?v=20261119-detail2");
+  background-position:center,center 48%;
+}
+body[data-page="info"] .privacy-section {
+  background:transparent;
+}
+body[data-page="info"] .info-nature-leaves {
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  overflow:hidden;
+}
+body[data-page="info"] :is(.info-hero,.about-grid,.info-vision,.info-details,.privacy-section) > :not(.info-nature-leaves) {
+  position:relative;
+  z-index:1;
+}
+body[data-page="info"] .info-nature-leaf {
+  display:block;
+  position:absolute;
+  left:var(--info-x);
+  top:-20px;
+  width:var(--info-size);
+  height:calc(var(--info-size) * .6);
+  border-radius:90% 10% 90% 8%;
+  background:var(--info-color);
+  opacity:.6;
+  animation:rixobyte-info-fall var(--info-time) linear var(--info-delay) infinite;
+}
+@keyframes rixobyte-info-fall {
+  0% {transform:translate3d(0,-30px,0) rotate(0);opacity:0}
+  12% {opacity:.55}
+  35% {transform:translate3d(28px,190px,0) rotate(110deg)}
+  65% {transform:translate3d(-17px,390px,0) rotate(230deg)}
+  88% {opacity:.45}
+  100% {transform:translate3d(56px,660px,0) rotate(390deg);opacity:0}
+}
+@media(max-width:800px) {
+  body[data-page="info"] .info-vision {grid-template-columns:1fr;gap:24px}
+  body[data-page="info"] .info-vision::before {background-position:center,64% center}
+  body[data-page="info"] .info-details dl {padding:0 12px}
+}
+@media(prefers-reduced-motion:reduce){
+  body[data-page="info"] .info-nature-leaf {display:none;animation:none}
+}
