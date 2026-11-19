@@ -2386,3 +2386,80 @@ details[open] .faq-plus::after {
 .language-switch button svg{display:block;width:30px;height:20px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
 .language-switch button[aria-pressed="true"]{border-color:var(--ink);background:rgba(60,96,58,.08)}
 .language-switch button:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+
+
+/* Animated nature backdrop — homepage hero only. */
+body[data-page="home"] .hero {
+  position: relative;
+  isolation: isolate;
+  padding-bottom: 12px;
+}
+body[data-page="home"] .hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: #dce4d9 url("rixobyte-nature-scene.svg") center 53% / cover no-repeat;
+  border-bottom: 1px solid #afc3b5;
+}
+body[data-page="home"] .hero-leaves {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+}
+body[data-page="home"] .hero > :not(.hero-leaves) {
+  position: relative;
+  z-index: 1;
+}
+body[data-page="home"] .hero .hero-aside > p:first-child,
+body[data-page="home"] .hero .hero-signature,
+body[data-page="home"] .hero .hero-foot > p,
+body[data-page="home"] .hero .hero-note {
+  color: #34483f;
+}
+body[data-page="home"] .hero .hero-foot {
+  border-bottom-color: rgba(39, 75, 62, .3);
+}
+body[data-page="home"] .hero-leaf {
+  position: absolute;
+  width: var(--leaf-size);
+  height: calc(var(--leaf-size) * .58);
+  left: var(--leaf-x);
+  top: -12%;
+  opacity: .75;
+  border-radius: 90% 8% 90% 8%;
+  background: var(--leaf-color);
+  box-shadow: inset 2px 0 1px rgba(255,255,255,.16);
+  animation: rixobyte-leaf-fall var(--leaf-duration) linear var(--leaf-delay) infinite;
+  will-change: transform;
+}
+@keyframes rixobyte-leaf-fall {
+  0%   { transform: translate3d(0,-26px,0) rotate(10deg); opacity: 0; }
+  8%   { opacity: .72; }
+  25%  { transform: translate3d(42px,120px,0) rotate(126deg); }
+  50%  { transform: translate3d(-18px,290px,0) rotate(212deg); }
+  75%  { transform: translate3d(65px,450px,0) rotate(329deg); opacity: .8; }
+  96%  { opacity: .7; }
+  100% { transform: translate3d(105px,720px,0) rotate(450deg); opacity: 0; }
+}
+@media (max-width: 700px) {
+  body[data-page="home"] .hero::before {
+    background-position: 57% center;
+  }
+  body[data-page="home"] .hero-leaf {
+    opacity: .52;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-page="home"] .hero-leaf { animation: none; display: none; }
+}
