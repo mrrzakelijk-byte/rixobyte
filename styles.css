@@ -2463,3 +2463,114 @@ body[data-page="home"] .hero-leaf {
 @media (prefers-reduced-motion: reduce) {
   body[data-page="home"] .hero-leaf { animation: none; display: none; }
 }
+
+
+/* Nature chapters: continuous animated wallpapers, with readable content over each scene. */
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer) {
+  position: relative;
+  isolation: isolate;
+}
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer)::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 auto 0 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer) > :not(.hero-leaves) {
+  position: relative;
+  z-index: 1;
+}
+/* Dawn: mountain meadow and mist behind the project showcase. */
+body[data-page="home"] .projects::before {
+  background-image: linear-gradient(90deg,rgba(244,244,236,.96) 0%,rgba(244,244,236,.84) 35%,rgba(244,244,236,.6) 100%),url("rixobyte-nature-scene.svg");
+  background-position: center,center 58%;
+}
+body[data-page="home"] .project {position:relative;z-index:1}
+body[data-page="home"] .project-art {box-shadow:0 14px 45px rgba(29,61,52,.1)}
+/* Twilight: darker evergreen mountains, lighter text in the services chapter. */
+body[data-page="home"] .services::before {
+  background-image:linear-gradient(90deg,rgba(15,42,38,.94),rgba(18,48,45,.85) 53%,rgba(21,48,52,.74)),url("rixobyte-nature-night.svg");
+  background-position:center,center 59%;
+}
+body[data-page="home"] .services .service-row {border-bottom-color:rgba(215,229,209,.32)}
+/* Misty forest path: process chapter. */
+body[data-page="home"] .process::before {
+  background-image:linear-gradient(90deg,rgba(244,244,236,.94),rgba(244,244,236,.82) 44%,rgba(244,244,236,.66)),url("rixobyte-nature-scene.svg");
+  background-position:center,center 76%;
+}
+body[data-page="home"] .process-list {background:rgba(248,249,239,.32);border-radius:5px}
+body[data-page="home"] .process-list > li {padding-bottom:16px}
+/* Golden hour: packages and agreements. */
+body[data-page="home"] .agreements::before {
+  background-image:linear-gradient(90deg,rgba(244,244,236,.96),rgba(244,244,236,.8) 55%,rgba(244,244,236,.68)),url("rixobyte-nature-dusk.svg");
+  background-position:center,center 68%;
+}
+body[data-page="home"] .agreements .agreement-card {
+  background:rgba(251,250,241,.7);
+  backdrop-filter:blur(7px);
+  border-color:rgba(90,111,96,.2);
+}
+body[data-page="home"] .agreements .agreements-note {background:rgba(251,250,241,.72)}
+/* About: personal studio in a soft atmospheric woodland. */
+body[data-page="home"] .maker {background:#e8ebdf}
+body[data-page="home"] .maker::before {
+  width:100%;
+  background-image:linear-gradient(90deg,rgba(234,236,221,.6),rgba(237,239,226,.92) 48%,rgba(244,244,236,.94)),url("rixobyte-nature-dusk.svg");
+  background-position:center,center 66%;
+}
+body[data-page="home"] .maker-symbol img {filter:drop-shadow(0 9px 16px rgba(25,54,46,.12))}
+/* FAQs: drifting clouds behind glass-like text panels. */
+body[data-page="home"] .faq::before {
+  background-image:linear-gradient(90deg,rgba(244,244,236,.97),rgba(244,244,236,.92) 47%,rgba(244,244,236,.72)),url("rixobyte-nature-scene.svg");
+  background-position:center,center 27%;
+}
+body[data-page="home"] .faq-list {
+  padding:12px 24px;
+  background:rgba(249,249,241,.72);
+  border:1px solid rgba(95,117,102,.22);
+  border-radius:7px;
+  backdrop-filter:blur(8px);
+}
+/* Contact: warm evening valley with a readable translucent form. */
+body[data-page="home"] .contact::before {
+  background-image:linear-gradient(90deg,rgba(235,239,222,.94),rgba(232,237,222,.83) 42%,rgba(232,237,222,.72)),url("rixobyte-nature-dusk.svg");
+  background-position:center,center 55%;
+}
+body[data-page="home"] .contact .quote-form {
+  background:rgba(248,249,239,.84);
+  border:1px solid rgba(76,102,80,.18);
+  border-radius:12px;
+  padding:clamp(22px,3.2vw,40px);
+  box-shadow:0 20px 55px rgba(37,60,52,.12);
+  backdrop-filter:blur(12px);
+}
+/* Footer: quiet nighttime landscape. */
+body[data-page="home"] .site-footer {
+  background:#1c3539;
+  color:#f1f4e7;
+}
+body[data-page="home"] .site-footer::before {
+  background-image:linear-gradient(90deg,rgba(18,42,45,.94),rgba(18,42,45,.88) 52%,rgba(18,42,45,.78)),url("rixobyte-nature-night.svg");
+  background-position:center,center 63%;
+}
+body[data-page="home"] .site-footer .rix-footer-col {border-color:rgba(233,243,228,.24)}
+body[data-page="home"] .site-footer .rix-footer-base {border-color:rgba(233,243,228,.25)}
+body[data-page="home"] .site-footer .rix-footer-col a:hover,
+body[data-page="home"] .site-footer .rix-footer-base a:hover {color:#d4edac}
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer) > .hero-leaves {
+  z-index:0;
+}
+@media(max-width:760px){
+  body[data-page="home"] :is(.projects,.process,.agreements,.faq)::before {
+    background-position:center,57% center;
+  }
+  body[data-page="home"] .faq-list {padding:6px 17px}
+  body[data-page="home"] .contact .quote-form {padding:18px}
+  body[data-page="home"] .maker::before {background-position:center,65% center}
+}
