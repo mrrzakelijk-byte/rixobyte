@@ -2574,3 +2574,36 @@ body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,
   body[data-page="home"] .contact .quote-form {padding:18px}
   body[data-page="home"] .maker::before {background-position:center,65% center}
 }
+
+
+/* All section leaves share the existing gentle endless fall motion. */
+body[data-page="home"] .hero-leaves {
+  pointer-events:none;
+}
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer) .hero-leaves {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:50%;
+  width:100vw;
+  overflow:hidden;
+  transform:translateX(-50%);
+}
+body[data-page="home"] .maker .hero-leaves {width:100%;border-radius:inherit}
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer) .hero-leaf {
+  position:absolute;
+  width:var(--leaf-size);
+  height:calc(var(--leaf-size) * .58);
+  left:var(--leaf-x);
+  top:-12%;
+  opacity:.72;
+  border-radius:90% 8% 90% 8%;
+  background:var(--leaf-color);
+  animation:rixobyte-leaf-fall var(--leaf-duration) linear var(--leaf-delay) infinite;
+  will-change:transform;
+}
+body[data-page="home"] .services .hero-leaf,
+body[data-page="home"] .site-footer .hero-leaf {opacity:.5}
+@media(prefers-reduced-motion:reduce){
+  body[data-page="home"] .hero-leaf {animation:none;display:none}
+}
