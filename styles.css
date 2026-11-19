@@ -2607,3 +2607,35 @@ body[data-page="home"] .site-footer .hero-leaf {opacity:.5}
 @media(prefers-reduced-motion:reduce){
   body[data-page="home"] .hero-leaf {animation:none;display:none}
 }
+
+
+/* Rixobyte ultra-smooth scroll reveals. No scroll hijacking. */
+@media (prefers-reduced-motion: no-preference) {
+  body[data-page="home"] .rix-reveal-ready {
+    opacity: 0;
+    transform: translate3d(0, 34px, 0);
+    transition:
+      opacity 850ms cubic-bezier(.22, 1, .36, 1),
+      transform 950ms cubic-bezier(.22, 1, .36, 1);
+    transition-delay: var(--rix-reveal-delay, 0ms);
+  }
+  body[data-page="home"] .rix-reveal-ready.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  body[data-page="home"] .project.rix-reveal-ready,
+  body[data-page="home"] .agreement-card.rix-reveal-ready,
+  body[data-page="home"] .process-list > li.rix-reveal-ready {
+    transform: translate3d(0, 46px, 0);
+  }
+  body[data-page="home"] :is(.project,.agreement-card,.process-list > li).rix-reveal-ready.is-in-view {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-page="home"] .rix-reveal-ready {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
