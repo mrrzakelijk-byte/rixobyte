@@ -2845,3 +2845,75 @@ body[data-page="info"] .info-nature-leaf {
 @media(prefers-reduced-motion:reduce){
   body[data-page="info"] .info-nature-leaf {display:none;animation:none}
 }
+
+
+/* Moonlit About experience: one coherent nocturnal scene with readable panels.
+   Only the About page changes; the homepage keeps its daytime wallpapers. */
+body[data-page="info"] .info-hero::before {
+  background-image:
+    linear-gradient(90deg,rgba(10,27,37,.94) 0%,rgba(11,32,43,.82) 45%,rgba(12,34,48,.38) 100%),
+    url("rixobyte-night-cabin.svg?v=1");
+  background-position:center,center 45%;
+}
+body[data-page="info"] .info-hero,
+body[data-page="info"] .info-hero h1,
+body[data-page="info"] .info-hero a,
+body[data-page="info"] .info-hero .eyebrow,
+body[data-page="info"] .info-hero .info-lead p {
+  color:#f3f4e9;
+}
+body[data-page="info"] .info-hero .hero-accent {color:#bdddbb}
+body[data-page="info"] .info-hero .info-lead > .eyebrow {color:#d4dfd6}
+body[data-page="info"] .info-hero .back-link {color:#e7ebdf}
+body[data-page="info"] .about-grid::before {
+  background-image:
+    linear-gradient(180deg,rgba(237,242,232,.8),rgba(237,242,232,.74) 48%,rgba(237,242,232,.88)),
+    url("rixobyte-night-cabin.svg?v=1");
+  background-position:center,center 71%;
+}
+body[data-page="info"] .about-grid .about-art {
+  background:rgba(234,239,227,.88);
+  border:1px solid rgba(244,247,238,.5);
+}
+body[data-page="info"] .about-grid .about-content {
+  padding:clamp(20px,3vw,40px);
+  border:1px solid rgba(225,232,219,.7);
+  border-radius:10px;
+  background:rgba(246,247,239,.87);
+  backdrop-filter:blur(7px);
+}
+body[data-page="info"] .info-vision::before {
+  background-image:
+    linear-gradient(90deg,rgba(12,31,43,.94),rgba(14,35,44,.84) 60%,rgba(16,40,48,.67)),
+    url("rixobyte-night-cabin.svg?v=1");
+  background-position:center,center 52%;
+}
+body[data-page="info"] .info-vision,
+body[data-page="info"] .info-vision h2,
+body[data-page="info"] .info-vision .eyebrow,
+body[data-page="info"] .info-vision .info-vision-copy {color:#f2f4e9}
+body[data-page="info"] .info-vision .info-vision-copy {color:#d9e5dc}
+body[data-page="info"] .info-details::before {
+  background-image:
+    linear-gradient(90deg,rgba(242,244,235,.94),rgba(242,244,235,.79) 57%,rgba(242,244,235,.54)),
+    url("rixobyte-night-cabin.svg?v=1");
+  background-position:center,center 74%;
+}
+body[data-page="info"] .info-details dl {
+  background:rgba(249,249,243,.85);
+}
+body[data-page="info"] .privacy-section::before {
+  background-image:
+    linear-gradient(90deg,rgba(229,236,228,.95),rgba(230,238,230,.87) 52%,rgba(229,238,229,.69)),
+    url("rixobyte-night-cabin.svg?v=1");
+  background-position:center,center 42%;
+}
+body[data-page="info"] .privacy-section {background:transparent}
+@media (max-width:800px) {
+  body[data-page="info"] .info-hero::before {
+    background-image:linear-gradient(90deg,rgba(10,27,37,.94),rgba(10,27,37,.74)),url("rixobyte-night-cabin.svg?v=1");
+    background-position:center,63% center;
+  }
+  body[data-page="info"] .about-grid .about-content {padding:22px}
+  body[data-page="info"] .info-vision::before {background-position:center,64% center}
+}
