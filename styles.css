@@ -2403,7 +2403,7 @@ body[data-page="home"] .hero::before {
   bottom: 0;
   width: 100vw;
   transform: translateX(-50%);
-  background: #dce4d9 url("rixobyte-nature-scene.svg") center 53% / cover no-repeat;
+  background: #dce4d9 url("rixobyte-nature-scene.svg?v=20261119-detail2") center 53% / cover no-repeat;
   border-bottom: 1px solid #afc3b5;
 }
 body[data-page="home"] .hero-leaves {
@@ -2488,27 +2488,27 @@ body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,
 }
 /* Dawn: mountain meadow and mist behind the project showcase. */
 body[data-page="home"] .projects::before {
-  background-image: linear-gradient(90deg,rgba(244,244,236,.96) 0%,rgba(244,244,236,.84) 35%,rgba(244,244,236,.6) 100%),url("rixobyte-nature-scene.svg");
+  background-image: linear-gradient(90deg,rgba(244,244,236,.96) 0%,rgba(244,244,236,.84) 35%,rgba(244,244,236,.6) 100%),url("rixobyte-nature-scene.svg?v=20261119-detail2");
   background-position: center,center 58%;
 }
 body[data-page="home"] .project {position:relative;z-index:1}
 body[data-page="home"] .project-art {box-shadow:0 14px 45px rgba(29,61,52,.1)}
 /* Twilight: darker evergreen mountains, lighter text in the services chapter. */
 body[data-page="home"] .services::before {
-  background-image:linear-gradient(90deg,rgba(15,42,38,.94),rgba(18,48,45,.85) 53%,rgba(21,48,52,.74)),url("rixobyte-nature-night.svg");
+  background-image:linear-gradient(90deg,rgba(15,42,38,.94),rgba(18,48,45,.85) 53%,rgba(21,48,52,.74)),url("rixobyte-nature-night.svg?v=20261119-detail2");
   background-position:center,center 59%;
 }
 body[data-page="home"] .services .service-row {border-bottom-color:rgba(215,229,209,.32)}
 /* Misty forest path: process chapter. */
 body[data-page="home"] .process::before {
-  background-image:linear-gradient(90deg,rgba(244,244,236,.94),rgba(244,244,236,.82) 44%,rgba(244,244,236,.66)),url("rixobyte-nature-scene.svg");
+  background-image:linear-gradient(90deg,rgba(244,244,236,.94),rgba(244,244,236,.82) 44%,rgba(244,244,236,.66)),url("rixobyte-nature-scene.svg?v=20261119-detail2");
   background-position:center,center 76%;
 }
 body[data-page="home"] .process-list {background:rgba(248,249,239,.32);border-radius:5px}
 body[data-page="home"] .process-list > li {padding-bottom:16px}
 /* Golden hour: packages and agreements. */
 body[data-page="home"] .agreements::before {
-  background-image:linear-gradient(90deg,rgba(244,244,236,.96),rgba(244,244,236,.8) 55%,rgba(244,244,236,.68)),url("rixobyte-nature-dusk.svg");
+  background-image:linear-gradient(90deg,rgba(244,244,236,.96),rgba(244,244,236,.8) 55%,rgba(244,244,236,.68)),url("rixobyte-nature-dusk.svg?v=20261119-detail2");
   background-position:center,center 68%;
 }
 body[data-page="home"] .agreements .agreement-card {
@@ -2521,13 +2521,13 @@ body[data-page="home"] .agreements .agreements-note {background:rgba(251,250,241
 body[data-page="home"] .maker {background:#e8ebdf}
 body[data-page="home"] .maker::before {
   width:100%;
-  background-image:linear-gradient(90deg,rgba(234,236,221,.6),rgba(237,239,226,.92) 48%,rgba(244,244,236,.94)),url("rixobyte-nature-dusk.svg");
+  background-image:linear-gradient(90deg,rgba(234,236,221,.6),rgba(237,239,226,.92) 48%,rgba(244,244,236,.94)),url("rixobyte-nature-dusk.svg?v=20261119-detail2");
   background-position:center,center 66%;
 }
 body[data-page="home"] .maker-symbol img {filter:drop-shadow(0 9px 16px rgba(25,54,46,.12))}
 /* FAQs: drifting clouds behind glass-like text panels. */
 body[data-page="home"] .faq::before {
-  background-image:linear-gradient(90deg,rgba(244,244,236,.97),rgba(244,244,236,.92) 47%,rgba(244,244,236,.72)),url("rixobyte-nature-scene.svg");
+  background-image:linear-gradient(90deg,rgba(244,244,236,.97),rgba(244,244,236,.92) 47%,rgba(244,244,236,.72)),url("rixobyte-nature-scene.svg?v=20261119-detail2");
   background-position:center,center 27%;
 }
 body[data-page="home"] .faq-list {
@@ -2539,7 +2539,7 @@ body[data-page="home"] .faq-list {
 }
 /* Contact: warm evening valley with a readable translucent form. */
 body[data-page="home"] .contact::before {
-  background-image:linear-gradient(90deg,rgba(235,239,222,.94),rgba(232,237,222,.83) 42%,rgba(232,237,222,.72)),url("rixobyte-nature-dusk.svg");
+  background-image:linear-gradient(90deg,rgba(235,239,222,.94),rgba(232,237,222,.83) 42%,rgba(232,237,222,.72)),url("rixobyte-nature-dusk.svg?v=20261119-detail2");
   background-position:center,center 55%;
 }
 body[data-page="home"] .contact .quote-form {
@@ -2556,7 +2556,7 @@ body[data-page="home"] .site-footer {
   color:#f1f4e7;
 }
 body[data-page="home"] .site-footer::before {
-  background-image:linear-gradient(90deg,rgba(18,42,45,.94),rgba(18,42,45,.88) 52%,rgba(18,42,45,.78)),url("rixobyte-nature-night.svg");
+  background-image:linear-gradient(90deg,rgba(18,42,45,.94),rgba(18,42,45,.88) 52%,rgba(18,42,45,.78)),url("rixobyte-nature-night.svg?v=20261119-detail2");
   background-position:center,center 63%;
 }
 body[data-page="home"] .site-footer .rix-footer-col {border-color:rgba(233,243,228,.24)}
@@ -2674,7 +2674,7 @@ body[data-page="home"] .projects::before {
   background-image:
     linear-gradient(180deg,rgba(244,244,236,.9) 0%,rgba(244,244,236,.1) 12%,rgba(244,244,236,.1) 87%,rgba(244,244,236,.74) 100%),
     linear-gradient(90deg,rgba(244,244,236,.94),rgba(244,244,236,.66) 53%,rgba(244,244,236,.43)),
-    url("rixobyte-nature-scene.svg");
+    url("rixobyte-nature-scene.svg?v=20261119-detail2");
   background-size:cover,cover,cover;
   background-position:center,center,center 60%;
 }
@@ -2682,34 +2682,34 @@ body[data-page="home"] .process::before {
   background-image:
     linear-gradient(180deg,rgba(244,244,236,.8),transparent 14%,transparent 86%,rgba(244,244,236,.75)),
     linear-gradient(90deg,rgba(244,244,236,.89),rgba(244,244,236,.7) 54%,rgba(244,244,236,.5)),
-    url("rixobyte-nature-scene.svg");
+    url("rixobyte-nature-scene.svg?v=20261119-detail2");
   background-position:center,center,center 78%;
 }
 body[data-page="home"] .agreements::before {
   background-image:
     linear-gradient(180deg,rgba(244,244,236,.85),transparent 15%,transparent 85%,rgba(244,244,236,.8)),
     linear-gradient(90deg,rgba(244,244,236,.9),rgba(244,244,236,.72) 58%,rgba(244,244,236,.58)),
-    url("rixobyte-nature-dusk.svg");
+    url("rixobyte-nature-dusk.svg?v=20261119-detail2");
   background-position:center,center,center 65%;
 }
 body[data-page="home"] .faq::before {
   background-image:
     linear-gradient(180deg,rgba(244,244,236,.83),transparent 12%,transparent 88%,rgba(244,244,236,.82)),
     linear-gradient(90deg,rgba(244,244,236,.93),rgba(244,244,236,.8) 50%,rgba(244,244,236,.53)),
-    url("rixobyte-nature-scene.svg");
+    url("rixobyte-nature-scene.svg?v=20261119-detail2");
   background-position:center,center,center 38%;
 }
 body[data-page="home"] .services::before {
   background-image:
     linear-gradient(180deg,rgba(16,42,40,.8),transparent 14%,transparent 88%,rgba(16,42,40,.76)),
     linear-gradient(90deg,rgba(15,42,38,.91),rgba(18,48,45,.77) 52%,rgba(21,48,52,.62)),
-    url("rixobyte-nature-night.svg");
+    url("rixobyte-nature-night.svg?v=20261119-detail2");
 }
 body[data-page="home"] .contact::before {
   background-image:
     linear-gradient(180deg,rgba(235,239,222,.65),transparent 15%,transparent 86%,rgba(235,239,222,.8)),
     linear-gradient(90deg,rgba(235,239,222,.92),rgba(232,237,222,.79) 43%,rgba(232,237,222,.62)),
-    url("rixobyte-nature-dusk.svg");
+    url("rixobyte-nature-dusk.svg?v=20261119-detail2");
 }
 /* Full viewport effects should never introduce their own vertical scroller. */
 body[data-page="home"] .hero-leaves { overflow:hidden; }
