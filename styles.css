@@ -2943,3 +2943,102 @@ body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+
+/* Rixobyte landscape collection v2 — every chapter its own detailed scene.
+   Illustrations are resolution-independent vector scenes with quiet CSS animations. */
+body[data-page="home"] :is(.projects,.services,.process,.agreements,.maker,.faq,.contact,.site-footer)::before,
+body[data-page="info"] :is(.info-hero,.about-grid,.info-vision,.info-details,.privacy-section)::before {
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+body[data-page="home"] .projects::before {
+  background-image:
+    linear-gradient(180deg,rgba(244,244,236,.72),transparent 14%,transparent 85%,rgba(244,244,236,.68)),
+    linear-gradient(90deg,rgba(244,244,236,.91) 0%,rgba(244,244,236,.72) 42%,rgba(244,244,236,.19) 100%),
+    url("rixobyte-scene-lake.svg?v=20261120-v2");
+  background-position:center,center,center 54%;
+}
+body[data-page="home"] .services::before {
+  background-image:
+    linear-gradient(180deg,rgba(12,35,38,.56),transparent 13%,transparent 85%,rgba(12,35,38,.68)),
+    linear-gradient(90deg,rgba(11,31,40,.91),rgba(11,31,40,.78) 53%,rgba(11,31,40,.32)),
+    url("rixobyte-scene-aurora.svg?v=20261120-v2");
+  background-position:center,center,center 52%;
+}
+body[data-page="home"] .process::before {
+  background-image:
+    linear-gradient(180deg,rgba(244,244,236,.71),transparent 15%,transparent 85%,rgba(244,244,236,.74)),
+    linear-gradient(90deg,rgba(244,244,236,.92),rgba(244,244,236,.72) 53%,rgba(244,244,236,.28)),
+    url("rixobyte-scene-forest.svg?v=20261120-v2");
+  background-position:center,center,center 52%;
+}
+body[data-page="home"] .agreements::before {
+  background-image:
+    linear-gradient(180deg,rgba(244,244,236,.73),transparent 15%,transparent 85%,rgba(244,244,236,.73)),
+    linear-gradient(90deg,rgba(244,244,236,.93),rgba(244,244,236,.75) 55%,rgba(244,244,236,.25)),
+    url("rixobyte-scene-coast.svg?v=20261120-v2");
+  background-position:center,center,center 57%;
+}
+body[data-page="home"] .maker::before {
+  width:100vw;
+  background-image:
+    linear-gradient(90deg,rgba(240,243,230,.74),rgba(242,245,232,.84) 49%,rgba(244,244,236,.94)),
+    url("rixobyte-scene-garden.svg?v=20261120-v2");
+  background-position:center,center 48%;
+}
+body[data-page="home"] .faq::before {
+  background-image:
+    linear-gradient(180deg,rgba(244,244,236,.73),transparent 14%,transparent 86%,rgba(244,244,236,.8)),
+    linear-gradient(90deg,rgba(244,244,236,.92),rgba(244,244,236,.79) 52%,rgba(244,244,236,.30)),
+    url("rixobyte-scene-falls.svg?v=20261120-v2");
+  background-position:center,center,center 54%;
+}
+body[data-page="home"] .contact::before {
+  background-image:
+    linear-gradient(180deg,rgba(237,239,230,.75),transparent 16%,transparent 87%,rgba(237,239,230,.7)),
+    linear-gradient(90deg,rgba(237,239,230,.91),rgba(237,239,230,.73) 49%,rgba(237,239,230,.27)),
+    url("rixobyte-scene-twilight.svg?v=20261120-v2");
+  background-position:center,center,center 50%;
+}
+body[data-page="home"] .site-footer::before {
+  background-image:
+    linear-gradient(90deg,rgba(13,33,40,.94),rgba(13,33,40,.81) 55%,rgba(13,33,40,.46)),
+    url("rixobyte-scene-starwood.svg?v=20261120-v2");
+  background-position:center,center 56%;
+}
+body[data-page="info"] .about-grid::before {
+  background-image:
+    linear-gradient(180deg,rgba(239,242,235,.7),rgba(239,242,235,.84) 88%),
+    linear-gradient(90deg,rgba(239,242,235,.73),rgba(239,242,235,.47)),
+    url("rixobyte-scene-moonlake.svg?v=20261120-v2");
+  background-position:center,center,center 55%;
+}
+body[data-page="info"] .info-vision::before {
+  background-image:
+    linear-gradient(90deg,rgba(13,29,43,.92),rgba(13,29,43,.83) 55%,rgba(13,29,43,.41)),
+    url("rixobyte-scene-starridge.svg?v=20261120-v2");
+  background-position:center,center 47%;
+}
+body[data-page="info"] .info-details::before {
+  background-image:
+    linear-gradient(180deg,rgba(244,244,236,.68),transparent 17%,transparent 85%,rgba(244,244,236,.75)),
+    linear-gradient(90deg,rgba(244,244,236,.92),rgba(244,244,236,.68) 55%,rgba(244,244,236,.27)),
+    url("rixobyte-scene-lanternpath.svg?v=20261120-v2");
+  background-position:center,center,center 49%;
+}
+body[data-page="info"] .privacy-section::before {
+  background-image:
+    linear-gradient(180deg,rgba(230,236,229,.73),transparent 12%,transparent 88%,rgba(230,236,229,.75)),
+    linear-gradient(90deg,rgba(230,236,229,.95),rgba(230,236,229,.84) 57%,rgba(230,236,229,.38)),
+    url("rixobyte-scene-nightmarsh.svg?v=20261120-v2");
+  background-position:center,center,center 62%;
+}
+@media(max-width:760px){
+  body[data-page="home"] :is(.projects,.process,.agreements,.faq,.contact)::before,
+  body[data-page="info"] :is(.about-grid,.info-details,.privacy-section)::before {
+    background-position:center,center,63% center;
+  }
+  body[data-page="home"] .maker::before {background-position:center,63% center}
+  body[data-page="info"] .info-vision::before {background-position:center,61% center}
+}
